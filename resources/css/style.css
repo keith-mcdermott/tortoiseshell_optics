@@ -1,0 +1,79 @@
+/* Universal styles */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+
+.logo-img img{
+  height: 1.5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  top: 1rem;
+  z-index: 1;
+  border: 1px solid lightblue;
+}
+
+li {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Heading */
+.heading {
+  background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+/* Logo and top banner */
+.banner {
+  background-color: cadetblue;
+  width:100%;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+}
+.logo_top {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  margin-left: 2rem;
+}
+h1 {
+  white-space: nowrap;
+  color: white;
+  margin-left: 1rem;
+}
+nav {
+  margin-left: auto;
+  border: 1px solid red;
+}
+.mobile-nav {
+  display: none;
+}
+/* Slogan section */
+.slogan {
+
+    margin-right: -2rem;
+    background-color: white;
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    float: right;
+}
