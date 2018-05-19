@@ -7,10 +7,15 @@ body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.4;
 }
-
+.logo-top,
+.logo-end {
+  display: flex;
+  align-items: center;
+}
 
 .logo-img img{
   height: 1.5rem;
+  margin-right:1rem;
 }
 
 .container {
@@ -19,7 +24,6 @@ body {
   position: relative;
   top: 1rem;
   z-index: 1;
-  border: 1px solid lightblue;
 }
 
 li {
@@ -43,37 +47,159 @@ li {
 .banner {
   background-color: cadetblue;
   width:100%;
-  margin-bottom: 10rem;
   display: flex;
   align-items: center;
 }
-.logo_top {
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
+.logo-top {
   margin-left: 2rem;
 }
+
 h1 {
   white-space: nowrap;
   color: white;
-  margin-left: 1rem;
 }
+
 nav {
   margin-left: auto;
-  border: 1px solid red;
+  white-space: nowrap;
 }
 .mobile-nav {
   display: none;
 }
 /* Slogan section */
 .slogan {
+  margin-right: -2rem;
+  margin-top: 10rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  float: right;
+}
+/* Services section */
+.services {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
-    margin-right: -2rem;
-    background-color: white;
-    padding: 1.5rem 5rem;
-    font-weight: bold;
-    font-size: 2rem;
+.svc1,
+.svc1 img {
+  width: 3.5rem;
+}
+.svc2,
+.svc2 img,
+.svc3,
+.svc3 img {
+  width: 5rem;
+}
+
+ h4{
+  text-align: center;
+}
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 8rem;
+  margin: 3rem 3rem;
+}
+/* Info section */
+.company_info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.info {
+  width: 35%;
+}
+.info h3 {
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+}
+.info_left {
+  margin-right: 5%;
+}
+/* Footer section */
+.logo-end {
+  background-color: azure;
+  line-height: 1.5rem;
+  padding: 4rem;
+}
+@media only screen and (max-width: 1024px){
+  .container {
+    width:100%;
+    position: relative;
+    top: 0;
+  }
+
+  .heading {
+    height: 22rem;
+  }
+  .slogan {
+    margin-right: 2rem;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
     line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .mobile-nav {
+    display: inline-block;
+    margin-left: auto;
     white-space: nowrap;
-    float: right;
+  }
+  .nav {
+    display: none;
+  }
+  .heading {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .slogan {
+    margin-top: 9rem;
+    width: 100%;
+    padding: 1rem 0;
+    line-height: 1.2;
+    text-align: center;
+    float: none;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem 0;
+  }
+  .service {
+    margin:1.54rem 0;
+  }
+  .company_info {
+    flex-direction: column;
+  }
+  .info {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .info h3 {
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    width: auto;
+  }
+  .info p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
+  .logo-end span {
+    display: none;
+  }
+  .logo-end img {
+    margin: 0 auto;
+  }
 }
